@@ -1,0 +1,8 @@
+error: no matching resources found
+error: no matching resources found
+pod/whereabouts-9vhwl condition met pod/whereabouts-vnkkp condition met error: timed out waiting for the condition on pods/samplepod
+error: no matching resources found
+pod/whereabouts-9vhwl condition met pod/whereabouts-vnkkp condition met error: timed out waiting for the condition on pods/samplepod
+error: no matching resources found
+error: no matching resources found
+error: no matching resources found

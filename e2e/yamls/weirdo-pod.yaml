@@ -4,6 +4,8 @@ metadata:
   name: static-web
   annotations:
     k8s.v1.cni.cncf.io/networks: "bridge-nad"
+  labels:
+    weirdopod: "yup"
 spec: 
   containers: 
     - name: kube-rbac-proxy
