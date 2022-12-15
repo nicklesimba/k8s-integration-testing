@@ -67,30 +67,9 @@ if (( samplepod_ip_lastnum > 16 )) && (( samplepod_ip_lastnum < 32 )) ; then
     echo "success!"
 else
     echo "failure!"
+    stderr=$result
+    echo "samplepod ip ($samplepod_ip) not in expected range (10.244.1.16 - 10.244.1.31)"  >> log.txt
 fi
 
 # _________/Multus Integration Test: 
 # - description goes here
-
-# Notes for myself
-# ---------------------------------------------------------------------------------------------------------
-
-# echo "pre-meme"
-# echo $pod_status
-# echo "meme"
-# kubectl get pods --all-namespaces -o json | jq -r '.items[].status.phase' | while read phase ; do
-#     if [ ${phase} = "Running" ]; then
-#         echo "Pod is healthy."
-#     else
-#         echo "Pod is not healthy."
-#         # before exiting 
-#         exit 1
-#     fi
-# done
-
-# Technical todo
-# - if any pod failure happens, we want to log it. stick that into some kind of log file (maybe by component or one big file)
-# - failures of what: pods, reconciler controller (whereabouts), 
-# - whereabouts/multus testing: create net-attach-def that uses whereabouts, launch pod that references that
-#   - also want to check `ip a` and see if assigned ip address on interface is correct
-# - next steps after this: enable other components beyond multus/whereabouts
