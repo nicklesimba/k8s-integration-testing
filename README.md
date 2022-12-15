@@ -1,5 +1,7 @@
 # Kubernetes Release Tooling
 
+(This is a stub readme - please disregard for now)
+
 This repository holds Kubernetes CI workflow configuration for Kubernetes component repositories in Kubernetes Network Plumbing Working Group.
 
 ## CI Workflow Configuration
